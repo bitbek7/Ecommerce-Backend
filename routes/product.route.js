@@ -4,7 +4,7 @@ import express from "express";
 import {getFeaturedProducts,getProductsByCategory,getRecommandProducts,createProduct,toggleFeaturedProduct,deleteProduct} from "../controllers/productcontroller.js";
 export const router=express.Router();
 
-router.get("/featured",getFeaturedPriducts);
+router.get("/featured",getFeaturedProducts);
 router.get("/category/:category",getProductsByCategory);
 router.get("/recommendation", getRecommandProducts);
 

@@ -9,7 +9,7 @@ const couponSchema=new mongoose.schema({
         type:Number,
         required:true,
         min:0,
-        max:100
+        max:85
     },
     expirationDate:{
         type:Date,
@@ -26,5 +26,5 @@ const couponSchema=new mongoose.schema({
         unique:true
     }
 },{timestamps:true});
-const couponModel=mongoose.model("couponModel",couponSchema);
-module.exports=couponModel;
+const Coupon=mongoose.model("couponModel",couponSchema);
+module.exports=Coupon;
